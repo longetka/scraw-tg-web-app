@@ -2,17 +2,20 @@ import './Header.css'
 import imgAvatar from '../../../public/img/Mask group.svg'
 import iconArrow from '../../../public/icons/arrow-right.svg'
 import iconWallet from '../../../public/icons/wallet.svg'
+import { useTelegram } from '../../hooks/useTelegram'
 
 function Header() {
 
-    var userName = "MrLikon"
+    var { user } = useTelegram();
+
+    console.log(user)
 
     return (
         <header>
             <nav>
                 <a className='nav_userButton'>
                     <img src={imgAvatar} />
-                    {userName}
+                    MrLikon
                     <img className='iconArrow' src={iconArrow} />
 
                 </a>

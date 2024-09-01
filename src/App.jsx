@@ -1,13 +1,16 @@
+import {useEffect} from 'react'
 import './App.css'
 import Header from './components/Header/Header.jsx'
-const tg = window.Telegram.WebApp
+import { useTelegram } from './hooks/useTelegram'
 
 function App() {
-    tg.ready()
-    //const onClose = () => {
-        //tg.close()
-    //}
+    var { onAppReady, appExpand } = useTelegram()
 
+    useEffect(() => {
+        onAppReady()
+        appExpand()
+    })
+    
   return (
     <div className='app_container'>
       <Header/>
