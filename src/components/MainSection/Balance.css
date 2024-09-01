@@ -1,0 +1,26 @@
+.balance {
+
+}
+
+.balance__container {
+    display: flex;
+    justify-content: end;
+    img {
+        padding-left: 5px;
+        width: 11%;
+    }
+}
+.balance__text, .balance__qty {
+    font-family: Montserrat;
+    text-align: end;
+}
+.balance__text {
+    color: #928298;
+    font-size: 1.2rem;
+}
+
+.balance__qty {
+    color: #E7D4EA;
+    font-size: 2rem;
+    font-weight: bold;
+}

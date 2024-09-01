@@ -1,0 +1,10 @@
+.mainSection {
+    background-color: #171318;
+    padding: 1rem;
+}
+
+.mainSection__container {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #201A22;
+}

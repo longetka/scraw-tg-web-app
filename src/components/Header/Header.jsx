@@ -14,8 +14,8 @@ function Header() {
         <header>
             <nav>
                 <a className='nav_userButton'>
-                    <img src={user?.photo_url} />
-                    {user?.username}
+                    <img src={user?.photo_url || imgAvatar} />
+                    {user?.username || "MrLikon"}
                     <img className='iconArrow' src={iconArrow} />
 
                 </a>

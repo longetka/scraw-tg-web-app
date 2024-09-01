@@ -7,5 +7,5 @@
 
 body {
     display: flex;
-    background-color: #171318;
+    height: var(--tg-viewport-stable-height);
 }
